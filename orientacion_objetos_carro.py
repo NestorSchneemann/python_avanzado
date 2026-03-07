@@ -8,7 +8,7 @@ class carro:
     def acelerar(self):
         if self.combustible > 0:
             self.velocidad += 10
-            if self.modelo < 2000:
+            if self.modelo > 2000:
                 self.combustible -= self.velocidad/100
             else:
                 self.combustible -= self.velocidad/150
